@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Counter from './CounterList/Counter'
 import CounterList from './CounterList';
 
 class App extends Component {
@@ -16,16 +15,16 @@ class App extends Component {
 
         this.setState({
             counters: addCounter
-        })
-    }
+        });
+    };
 
     decreaseCounters = () => {
         let removeCounter = this.state.counters - 1;
         
         this.setState({
             counters: removeCounter
-        })
-    }
+        });
+    };
 
     render() {
         return (
